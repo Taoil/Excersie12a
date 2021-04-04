@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="Exercise12Asheet" href="Exercise12A.css"></head>
+<title>Web Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+ background-image: url("images/back.jpg");
+ background-color: #cccccc;
+}
+.leftcolumn {
+  float: left;
+  width: 50%;
+  padding: 0 20px
+}
+.column1 {
+  float: left;
+  width: 40%;
+  height: 40%
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 20px 20px
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main {
+  float: left;
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+  color: white;
+  text-shadow: 8px 8px 4px #000000;
+}
+.column2 {
+  float: left;
+  width: 32%;
+  padding: 0 20px
+}
+.column3 {
+  float: left;
+  width: 32%;
+  color: white;
+   text-shadow: 2px 2px 4px #000000;
+  padding: 0 20px
+}
+.column4 {
+  float: left;
+  width: 32%;
+  padding: 0 20px
+}
+.column5 {
+  float: left;
+  width: 25%;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 0 20px
+}
+.column6 {
+  float: left;
+  width: 25%;
+}
+.column7 {
+  float: left;
+  width: 25%;
+   color: white;
+   text-shadow: 2px 2px 4px #000000;
+  padding: 0 20px
+}
+.column8 {
+  float: left;
+  width: 25%;
+  padding: 0 20px
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .leftcolumn {
+    width: 80%;
+    padding: 0;
+  }
+  
+  .main{
+  width: 80%;
+  padding: 0;
+  }
+ 
+   .column1{
+  width: 80%;
+  padding: 0;
+  }
+  
+    .column2{
+  width: 80%;
+  padding: 0;
+  }
+  
+   .column3{
+  width: 80%;
+  padding: 0;
+  }
+  
+   .column4{
+  width: 80%;
+  padding: 0;
+  }
+  
+   .column5{
+  width: 80%;
+  padding: 0;
+  }
+  
+   .column6{
+  width: 80%;
+  padding: 0;
+  }
+  
+   .column7{
+  width: 80%;
+  padding: 0;
+  }
+  
+   .column8{
+  width: 80%;
+  padding: 0;
+  }
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .leftcolumn,{
+    width: 100%;
+	padding: 0;
+  }
+
+  .main{
+  width: 100%;
+  padding: 0;
+  }
+
+  .column1{
+  width: 100%;
+  padding: 0;
+  }
+  
+  .column2{
+  width: 100%;
+  padding: 0;
+  }
+  
+  .column3{
+  width: 100%;
+  padding: 0;
+  }
+  
+  .column4{
+  width: 100%;
+  padding: 0;
+  }
+  
+  .column5{
+  width: 100%;
+  padding: 0;
+  }
+  
+  .column6{
+  width: 100%;
+  padding: 0;
+  }
+  
+  .column7{
+  width: 100%;
+  padding: 0;
+  }
+  
+  .column8{
+  width: 100%;
+  padding: 0;
+  }
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="overflow:auto">
+  <div class="leftcolumn">
+    <img src="images/bundok.png" style="width:65%">
+  </div>
+  
+  <div class="column1">
+	 <h1><p>Mt. Yangbew</p></h1>
+	 <h1><p>Barangay Tawang</p></h1>
+	 <h1><p>LA TRINIDAD, BENGEUT</p></h1>
+  </div>
+  
+  <div class="main">
+     <b><p>Mt. Yangbew is one of the locals’ favorite hiking, camping or sunrise/sunset viewing near Baguio. It is also known as Mt. Jumbo or Mt. Jambo because it used to be the place for the National Scout Jamboree of the Boy Scouts of America when the Americans were in the region decades ago.</p></b>
+	 <b><p>Locals also refer to it as the little Mt. Pulag because of the lack of trees at the summit which is reminiscent of Pulag.</p></b>
+	 <b><p>This is the amazing sunrise spot of La Trinidad. It has rolling grass that changes colors with seasons and offers a majestic view of the La Trinidad valley and even surounding towns.</p></b>
+	 <b><p>Mt.Yangbew is amoung the mountain ranges surrounding La Trinidad locatesd in Tawang. The hike from the jumpinf-off point to the summit is around  30 minutes.</p></b>
+  </div>
+  
+  <div class="column2">
+	<img src="images/bato.jpg" style="width:100%">
+  </div>
+
+  <div class="column3">
+    <center><h1><p>HIKING</p></h1></center>
+  </div>
+
+  <div class="column4">
+    <img src="images/cloud.jpg" style="width:90%">
+  </div>
+</div>
+
+<div class="column5">
+    <center><h1><p>CAMPING</p></h1></center>
+  </div>
+</div>
+
+<div class="column6">
+    <img src="images/camp.jpg" style="width:100%">
+  </div>
+</div>
+
+<div class="column7">
+	<center><h1><p>HORSEBACK RIDING</p></h1></center>
+  </div>
+</div>
+
+<div class="column8">
+	<img src="images/horse.jpg" style="width:100%">
+  </div>
+</div>
+</body>
+</html>
